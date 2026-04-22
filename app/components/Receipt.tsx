@@ -13,10 +13,18 @@ interface Props {
 const DIVIDER = '- - - - - - - - - - - - - - -'
 
 export function Receipt({ selections, total }: Props) {
-  const [CountUp, setCountUp] = useState<React.ComponentType<{ end: number; duration: number; separator: string; useEasing: boolean }> | null>(null)
+  const [displayTotal, setDisplayTotal] = useState(0)
   useEffect(() => {
-    import('react-countup').then(m => setCountUp(() => m.default))
-  }, [])
+    const duration = 1200
+    const start = Date.now()
+    const tick = () => {
+      const p = Math.min((Date.now() - start) / duration, 1)
+      const eased = 1 - Math.pow(1 - p, 3)
+      setDisplayTotal(Math.round(total * eased))
+      if (p < 1) requestAnimationFrame(tick)
+    }
+    requestAnimationFrame(tick)
+  }, [total])
 
   const baseYear = selections.length > 0
     ? Math.min(...selections.map(s => s.year))
@@ -93,10 +101,7 @@ export function Receipt({ selections, total }: Props) {
           <div className="text-center mb-2">
             <div className="text-sm text-[#6e6e73] mb-1">你的 Apple 稅</div>
             <div className="text-4xl font-bold text-[#FF9F0A]">
-              {CountUp
-                ? <CountUp end={total} duration={1.5} separator="," useEasing />
-                : total.toLocaleString()
-              }
+              {displayTotal.toLocaleString()}
             </div>
           </div>
 

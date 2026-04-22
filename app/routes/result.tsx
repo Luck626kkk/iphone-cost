@@ -45,17 +45,17 @@ export default function Result() {
 
   if (total === 0 && !sharedTotal) {
     return (
-      <div className="min-h-screen bg-[#f5f5f7] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#1C1C1E' }}>
         <div className="text-center">
-          <p className="text-[#6e6e73] mb-4">還沒有選任何產品</p>
-          <Link to="/products" className="text-[#FF9F0A]">回去選產品</Link>
+          <p className="mb-4" style={{ color: '#AEAEB2' }}>還沒有選任何產品</p>
+          <Link to="/products" style={{ color: '#FF9F0A' }}>回去選產品</Link>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f5f7]">
+    <div className="min-h-screen" style={{ backgroundColor: '#1C1C1E' }}>
       <Receipt selections={selections} total={total} />
       <div className="max-w-sm mx-auto px-4 pb-12">
         <ShareButtons total={total} grade={grade} shareUrl={shareUrl} />

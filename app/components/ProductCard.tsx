@@ -12,19 +12,19 @@ export function ProductCard({ product, category, selections, onToggle }: Props) 
 
   return (
     <div
-      className={`border rounded-xl p-4 cursor-pointer transition-all ${
-        selectedVariant
-          ? 'border-[#0071e3] bg-blue-50'
-          : 'border-gray-200 bg-white hover:border-gray-400'
-      }`}
+      className="border rounded-xl p-4 transition-all"
+      style={selectedVariant
+        ? { borderColor: '#FF9F0A', backgroundColor: '#2C2C2E' }
+        : { borderColor: '#3A3A3C', backgroundColor: '#2C2C2E' }
+      }
     >
       <div className="flex justify-between items-start mb-3">
         <div>
-          <div className="font-semibold text-[#1d1d1f]">{product.model}</div>
-          <div className="text-sm text-[#6e6e73]">{product.year}</div>
+          <div className="font-semibold" style={{ color: '#FFFFFF' }}>{product.model}</div>
+          <div className="text-sm" style={{ color: '#AEAEB2' }}>{product.year}</div>
         </div>
         {selectedVariant && (
-          <span className="text-[#0071e3] font-semibold text-sm">
+          <span className="font-semibold text-sm" style={{ color: '#FF9F0A' }}>
             NT${selectedVariant.price_twd.toLocaleString()}
           </span>
         )}
@@ -46,11 +46,11 @@ export function ProductCard({ product, category, selections, onToggle }: Props) 
                   category,
                 })
               }
-              className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
-                isSelected
-                  ? 'bg-[#0071e3] text-white border-[#0071e3]'
-                  : 'border-gray-300 text-[#1d1d1f] hover:border-[#0071e3]'
-              }`}
+              className="text-xs px-3 py-1.5 rounded-full border transition-colors"
+              style={isSelected
+                ? { backgroundColor: '#FF9F0A', color: '#000000', borderColor: '#FF9F0A' }
+                : { borderColor: '#3A3A3C', color: '#AEAEB2' }
+              }
             >
               {variant.storage}
             </button>

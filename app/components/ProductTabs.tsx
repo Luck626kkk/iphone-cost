@@ -40,11 +40,11 @@ export function ProductTabs({ selections, onToggle }: Props) {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-              activeTab === tab.key
-                ? 'bg-[#0071e3] text-white'
-                : 'bg-white text-[#1d1d1f] border border-gray-200 hover:border-[#0071e3]'
-            }`}
+            className="flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors"
+            style={activeTab === tab.key
+              ? { backgroundColor: '#FF9F0A', color: '#000000' }
+              : { backgroundColor: '#2C2C2E', color: '#AEAEB2', border: '1px solid #3A3A3C' }
+            }
           >
             <span>{tab.emoji}</span>
             <span>{tab.label}</span>
@@ -54,7 +54,7 @@ export function ProductTabs({ selections, onToggle }: Props) {
 
       {quickPicks.length > 0 && (
         <div className="mb-6">
-          <div className="text-xs text-[#6e6e73] font-medium mb-3 uppercase tracking-wide">
+          <div className="text-xs font-medium mb-3 uppercase tracking-wide" style={{ color: '#636366' }}>
             最常見選擇
           </div>
           <div className="grid gap-3">
@@ -73,7 +73,7 @@ export function ProductTabs({ selections, onToggle }: Props) {
 
       {remaining.length > 0 && (
         <div>
-          <div className="text-xs text-[#6e6e73] font-medium mb-3 uppercase tracking-wide">
+          <div className="text-xs font-medium mb-3 uppercase tracking-wide" style={{ color: '#636366' }}>
             全部型號
           </div>
           <div className="grid gap-3">

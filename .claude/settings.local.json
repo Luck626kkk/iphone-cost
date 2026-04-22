@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open /Users/luck/money/iphone-cost/doc/logo.svg)",
+      "Bash(open /Users/luck/money/iphone-cost/doc/og-default.svg)",
+      "Bash(npx create-remix@latest . --template cloudflare-pages --no-install --yes)",
+      "Bash(npx create-react-router@latest . --template cloudflare-pages --no-install --yes)",
+      "Bash(npx create-react-router@latest --help)",
+      "Bash(npm install *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\([k for k in d['packages'] if 'vercel' in k.lower\\(\\)]\\)\")",
+      "Bash(npm test *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(npm run *)",
+      "Bash(npm ls *)",
+      "Bash(npx playwright *)"
+    ]
+  }
+}
