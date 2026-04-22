@@ -1,385 +1,578 @@
 {
   "iphone": [
-    {
-      "id": "iphone-6",
-      "model": "iPhone 6",
-      "year": 2014,
-      "variants": [
-        { "storage": "16GB", "price_twd": 22500 },
-        { "storage": "64GB", "price_twd": 25900 },
-        { "storage": "128GB", "price_twd": 29500 }
-      ]
-    },
-    {
-      "id": "iphone-6s",
-      "model": "iPhone 6s",
-      "year": 2015,
-      "variants": [
-        { "storage": "16GB", "price_twd": 23500 },
-        { "storage": "64GB", "price_twd": 27900 },
-        { "storage": "128GB", "price_twd": 32500 }
-      ]
-    },
-    {
-      "id": "iphone-7",
-      "model": "iPhone 7",
-      "year": 2016,
-      "variants": [
-        { "storage": "32GB", "price_twd": 23500 },
-        { "storage": "128GB", "price_twd": 27900 },
-        { "storage": "256GB", "price_twd": 32900 }
-      ]
-    },
-    {
-      "id": "iphone-8",
-      "model": "iPhone 8",
-      "year": 2017,
-      "variants": [
-        { "storage": "64GB", "price_twd": 24900 },
-        { "storage": "256GB", "price_twd": 30900 }
-      ]
-    },
-    {
-      "id": "iphone-x",
-      "model": "iPhone X",
-      "year": 2017,
-      "variants": [
-        { "storage": "64GB", "price_twd": 35900 },
-        { "storage": "256GB", "price_twd": 41900 }
-      ]
-    },
-    {
-      "id": "iphone-11",
-      "model": "iPhone 11",
-      "year": 2019,
-      "variants": [
-        { "storage": "64GB", "price_twd": 24900 },
-        { "storage": "128GB", "price_twd": 27900 },
-        { "storage": "256GB", "price_twd": 33900 }
-      ]
-    },
-    {
-      "id": "iphone-11-pro",
-      "model": "iPhone 11 Pro",
-      "year": 2019,
-      "variants": [
-        { "storage": "64GB", "price_twd": 35900 },
-        { "storage": "256GB", "price_twd": 41900 },
-        { "storage": "512GB", "price_twd": 50900 }
-      ]
-    },
-    {
-      "id": "iphone-12",
-      "model": "iPhone 12",
-      "year": 2020,
-      "variants": [
-        { "storage": "64GB", "price_twd": 25900 },
-        { "storage": "128GB", "price_twd": 28900 },
-        { "storage": "256GB", "price_twd": 34900 }
-      ]
-    },
-    {
-      "id": "iphone-13",
-      "model": "iPhone 13",
-      "year": 2021,
-      "variants": [
-        { "storage": "128GB", "price_twd": 26900 },
-        { "storage": "256GB", "price_twd": 30900 },
-        { "storage": "512GB", "price_twd": 38900 }
-      ]
-    },
-    {
-      "id": "iphone-14",
-      "model": "iPhone 14",
-      "year": 2022,
-      "variants": [
-        { "storage": "128GB", "price_twd": 27900 },
-        { "storage": "256GB", "price_twd": 31900 },
-        { "storage": "512GB", "price_twd": 39900 }
-      ]
-    },
-    {
-      "id": "iphone-15",
-      "model": "iPhone 15",
-      "year": 2023,
-      "variants": [
-        { "storage": "128GB", "price_twd": 29900 },
-        { "storage": "256GB", "price_twd": 33900 },
-        { "storage": "512GB", "price_twd": 41900 }
-      ]
-    },
-    {
-      "id": "iphone-15-pro",
-      "model": "iPhone 15 Pro",
-      "year": 2023,
-      "variants": [
-        { "storage": "128GB", "price_twd": 36900 },
-        { "storage": "256GB", "price_twd": 40900 },
-        { "storage": "512GB", "price_twd": 48900 },
-        { "storage": "1TB", "price_twd": 56900 }
-      ]
-    },
-    {
-      "id": "iphone-15-pro-max",
-      "model": "iPhone 15 Pro Max",
-      "year": 2023,
-      "variants": [
-        { "storage": "256GB", "price_twd": 44900 },
-        { "storage": "512GB", "price_twd": 52900 },
-        { "storage": "1TB", "price_twd": 60900 }
-      ]
-    },
-    {
-      "id": "iphone-16",
-      "model": "iPhone 16",
-      "year": 2024,
-      "variants": [
-        { "storage": "128GB", "price_twd": 29900 },
-        { "storage": "256GB", "price_twd": 33900 },
-        { "storage": "512GB", "price_twd": 41900 }
-      ]
-    },
-    {
-      "id": "iphone-16-pro",
-      "model": "iPhone 16 Pro",
-      "year": 2024,
-      "variants": [
-        { "storage": "128GB", "price_twd": 37900 },
-        { "storage": "256GB", "price_twd": 41900 },
-        { "storage": "512GB", "price_twd": 49900 },
-        { "storage": "1TB", "price_twd": 57900 }
-      ]
-    },
-    {
-      "id": "iphone-16-pro-max",
-      "model": "iPhone 16 Pro Max",
-      "year": 2024,
-      "variants": [
-        { "storage": "256GB", "price_twd": 45900 },
-        { "storage": "512GB", "price_twd": 53900 },
-        { "storage": "1TB", "price_twd": 61900 }
-      ]
-    },
-    {
-      "id": "iphone-se-3",
-      "model": "iPhone SE (3代)",
-      "year": 2022,
-      "variants": [
-        { "storage": "64GB", "price_twd": 14500 },
-        { "storage": "128GB", "price_twd": 16500 },
-        { "storage": "256GB", "price_twd": 20500 }
-      ]
-    }
+    { "id": "iphone-17-pro-max", "model": "iPhone 17 Pro Max", "year": 2025, "variants": [
+      { "storage": "256GB", "price_twd": 49900 },
+      { "storage": "512GB", "price_twd": 56900 },
+      { "storage": "1TB", "price_twd": 63900 }
+    ]},
+    { "id": "iphone-17-pro", "model": "iPhone 17 Pro", "year": 2025, "variants": [
+      { "storage": "128GB", "price_twd": 42900 },
+      { "storage": "256GB", "price_twd": 45900 },
+      { "storage": "512GB", "price_twd": 52900 },
+      { "storage": "1TB", "price_twd": 59900 }
+    ]},
+    { "id": "iphone-17-plus", "model": "iPhone 17 Plus", "year": 2025, "variants": [
+      { "storage": "128GB", "price_twd": 36900 },
+      { "storage": "256GB", "price_twd": 39900 },
+      { "storage": "512GB", "price_twd": 46900 }
+    ]},
+    { "id": "iphone-17", "model": "iPhone 17", "year": 2025, "variants": [
+      { "storage": "128GB", "price_twd": 32900 },
+      { "storage": "256GB", "price_twd": 35900 },
+      { "storage": "512GB", "price_twd": 42900 }
+    ]},
+    { "id": "iphone-16e", "model": "iPhone 16e", "year": 2025, "variants": [
+      { "storage": "128GB", "price_twd": 24900 },
+      { "storage": "256GB", "price_twd": 27900 },
+      { "storage": "512GB", "price_twd": 34900 }
+    ]},
+    { "id": "iphone-16-pro-max", "model": "iPhone 16 Pro Max", "year": 2024, "variants": [
+      { "storage": "256GB", "price_twd": 46900 },
+      { "storage": "512GB", "price_twd": 53900 },
+      { "storage": "1TB", "price_twd": 60900 }
+    ]},
+    { "id": "iphone-16-pro", "model": "iPhone 16 Pro", "year": 2024, "variants": [
+      { "storage": "128GB", "price_twd": 39900 },
+      { "storage": "256GB", "price_twd": 42900 },
+      { "storage": "512GB", "price_twd": 49900 },
+      { "storage": "1TB", "price_twd": 56900 }
+    ]},
+    { "id": "iphone-16-plus", "model": "iPhone 16 Plus", "year": 2024, "variants": [
+      { "storage": "128GB", "price_twd": 34900 },
+      { "storage": "256GB", "price_twd": 37900 },
+      { "storage": "512GB", "price_twd": 44900 }
+    ]},
+    { "id": "iphone-16", "model": "iPhone 16", "year": 2024, "variants": [
+      { "storage": "128GB", "price_twd": 29900 },
+      { "storage": "256GB", "price_twd": 32900 },
+      { "storage": "512GB", "price_twd": 39900 }
+    ]},
+    { "id": "iphone-15-pro-max", "model": "iPhone 15 Pro Max", "year": 2023, "variants": [
+      { "storage": "256GB", "price_twd": 49900 },
+      { "storage": "512GB", "price_twd": 56900 },
+      { "storage": "1TB", "price_twd": 63900 }
+    ]},
+    { "id": "iphone-15-pro", "model": "iPhone 15 Pro", "year": 2023, "variants": [
+      { "storage": "128GB", "price_twd": 40900 },
+      { "storage": "256GB", "price_twd": 43900 },
+      { "storage": "512GB", "price_twd": 50900 },
+      { "storage": "1TB", "price_twd": 57900 }
+    ]},
+    { "id": "iphone-15-plus", "model": "iPhone 15 Plus", "year": 2023, "variants": [
+      { "storage": "128GB", "price_twd": 34900 },
+      { "storage": "256GB", "price_twd": 37900 },
+      { "storage": "512GB", "price_twd": 44900 }
+    ]},
+    { "id": "iphone-15", "model": "iPhone 15", "year": 2023, "variants": [
+      { "storage": "128GB", "price_twd": 29900 },
+      { "storage": "256GB", "price_twd": 32900 },
+      { "storage": "512GB", "price_twd": 39900 }
+    ]},
+    { "id": "iphone-14-pro-max", "model": "iPhone 14 Pro Max", "year": 2022, "variants": [
+      { "storage": "128GB", "price_twd": 46900 },
+      { "storage": "256GB", "price_twd": 49900 },
+      { "storage": "512GB", "price_twd": 56900 },
+      { "storage": "1TB", "price_twd": 63900 }
+    ]},
+    { "id": "iphone-14-pro", "model": "iPhone 14 Pro", "year": 2022, "variants": [
+      { "storage": "128GB", "price_twd": 40900 },
+      { "storage": "256GB", "price_twd": 43900 },
+      { "storage": "512GB", "price_twd": 50900 },
+      { "storage": "1TB", "price_twd": 57900 }
+    ]},
+    { "id": "iphone-14-plus", "model": "iPhone 14 Plus", "year": 2022, "variants": [
+      { "storage": "128GB", "price_twd": 34900 },
+      { "storage": "256GB", "price_twd": 37900 },
+      { "storage": "512GB", "price_twd": 44900 }
+    ]},
+    { "id": "iphone-14", "model": "iPhone 14", "year": 2022, "variants": [
+      { "storage": "128GB", "price_twd": 29900 },
+      { "storage": "256GB", "price_twd": 32900 },
+      { "storage": "512GB", "price_twd": 39900 }
+    ]},
+    { "id": "iphone-se-3", "model": "iPhone SE 3", "year": 2022, "variants": [
+      { "storage": "64GB", "price_twd": 14900 },
+      { "storage": "128GB", "price_twd": 16900 },
+      { "storage": "256GB", "price_twd": 20900 }
+    ]},
+    { "id": "iphone-13-pro-max", "model": "iPhone 13 Pro Max", "year": 2021, "variants": [
+      { "storage": "128GB", "price_twd": 40900 },
+      { "storage": "256GB", "price_twd": 43900 },
+      { "storage": "512GB", "price_twd": 50900 },
+      { "storage": "1TB", "price_twd": 57900 }
+    ]},
+    { "id": "iphone-13-pro", "model": "iPhone 13 Pro", "year": 2021, "variants": [
+      { "storage": "128GB", "price_twd": 34900 },
+      { "storage": "256GB", "price_twd": 37900 },
+      { "storage": "512GB", "price_twd": 44900 },
+      { "storage": "1TB", "price_twd": 51900 }
+    ]},
+    { "id": "iphone-13-mini", "model": "iPhone 13 mini", "year": 2021, "variants": [
+      { "storage": "128GB", "price_twd": 25900 },
+      { "storage": "256GB", "price_twd": 28900 },
+      { "storage": "512GB", "price_twd": 35900 }
+    ]},
+    { "id": "iphone-13", "model": "iPhone 13", "year": 2021, "variants": [
+      { "storage": "128GB", "price_twd": 29900 },
+      { "storage": "256GB", "price_twd": 32900 },
+      { "storage": "512GB", "price_twd": 39900 }
+    ]},
+    { "id": "iphone-12-pro-max", "model": "iPhone 12 Pro Max", "year": 2020, "variants": [
+      { "storage": "128GB", "price_twd": 40900 },
+      { "storage": "256GB", "price_twd": 43900 },
+      { "storage": "512GB", "price_twd": 50900 }
+    ]},
+    { "id": "iphone-12-pro", "model": "iPhone 12 Pro", "year": 2020, "variants": [
+      { "storage": "128GB", "price_twd": 34900 },
+      { "storage": "256GB", "price_twd": 37900 },
+      { "storage": "512GB", "price_twd": 44900 }
+    ]},
+    { "id": "iphone-12-mini", "model": "iPhone 12 mini", "year": 2020, "variants": [
+      { "storage": "64GB", "price_twd": 22900 },
+      { "storage": "128GB", "price_twd": 24900 },
+      { "storage": "256GB", "price_twd": 28900 }
+    ]},
+    { "id": "iphone-12", "model": "iPhone 12", "year": 2020, "variants": [
+      { "storage": "64GB", "price_twd": 26900 },
+      { "storage": "128GB", "price_twd": 28900 },
+      { "storage": "256GB", "price_twd": 32900 }
+    ]},
+    { "id": "iphone-se-2", "model": "iPhone SE 2", "year": 2020, "variants": [
+      { "storage": "64GB", "price_twd": 14500 },
+      { "storage": "128GB", "price_twd": 16500 },
+      { "storage": "256GB", "price_twd": 20500 }
+    ]},
+    { "id": "iphone-11-pro-max", "model": "iPhone 11 Pro Max", "year": 2019, "variants": [
+      { "storage": "64GB", "price_twd": 39900 },
+      { "storage": "256GB", "price_twd": 44900 },
+      { "storage": "512GB", "price_twd": 51900 }
+    ]},
+    { "id": "iphone-11-pro", "model": "iPhone 11 Pro", "year": 2019, "variants": [
+      { "storage": "64GB", "price_twd": 33900 },
+      { "storage": "256GB", "price_twd": 38900 },
+      { "storage": "512GB", "price_twd": 45900 }
+    ]},
+    { "id": "iphone-11", "model": "iPhone 11", "year": 2019, "variants": [
+      { "storage": "64GB", "price_twd": 24900 },
+      { "storage": "128GB", "price_twd": 26900 },
+      { "storage": "256GB", "price_twd": 30900 }
+    ]},
+    { "id": "iphone-xs-max", "model": "iPhone XS Max", "year": 2018, "variants": [
+      { "storage": "64GB", "price_twd": 38900 },
+      { "storage": "256GB", "price_twd": 44900 },
+      { "storage": "512GB", "price_twd": 51900 }
+    ]},
+    { "id": "iphone-xs", "model": "iPhone XS", "year": 2018, "variants": [
+      { "storage": "64GB", "price_twd": 33900 },
+      { "storage": "256GB", "price_twd": 38900 },
+      { "storage": "512GB", "price_twd": 45900 }
+    ]},
+    { "id": "iphone-xr", "model": "iPhone XR", "year": 2018, "variants": [
+      { "storage": "64GB", "price_twd": 24900 },
+      { "storage": "128GB", "price_twd": 26900 },
+      { "storage": "256GB", "price_twd": 30900 }
+    ]},
+    { "id": "iphone-x", "model": "iPhone X", "year": 2017, "variants": [
+      { "storage": "64GB", "price_twd": 35900 },
+      { "storage": "256GB", "price_twd": 40900 }
+    ]},
+    { "id": "iphone-8-plus", "model": "iPhone 8 Plus", "year": 2017, "variants": [
+      { "storage": "64GB", "price_twd": 27900 },
+      { "storage": "256GB", "price_twd": 32900 }
+    ]},
+    { "id": "iphone-8", "model": "iPhone 8", "year": 2017, "variants": [
+      { "storage": "64GB", "price_twd": 22900 },
+      { "storage": "256GB", "price_twd": 27900 }
+    ]},
+    { "id": "iphone-7-plus", "model": "iPhone 7 Plus", "year": 2016, "variants": [
+      { "storage": "32GB", "price_twd": 27900 },
+      { "storage": "128GB", "price_twd": 31900 },
+      { "storage": "256GB", "price_twd": 35900 }
+    ]},
+    { "id": "iphone-7", "model": "iPhone 7", "year": 2016, "variants": [
+      { "storage": "32GB", "price_twd": 21900 },
+      { "storage": "128GB", "price_twd": 25900 },
+      { "storage": "256GB", "price_twd": 29900 }
+    ]},
+    { "id": "iphone-se-1", "model": "iPhone SE 1", "year": 2016, "variants": [
+      { "storage": "16GB", "price_twd": 12900 },
+      { "storage": "64GB", "price_twd": 15900 }
+    ]},
+    { "id": "iphone-6s-plus", "model": "iPhone 6s Plus", "year": 2015, "variants": [
+      { "storage": "16GB", "price_twd": 28900 },
+      { "storage": "64GB", "price_twd": 32900 },
+      { "storage": "128GB", "price_twd": 36900 }
+    ]},
+    { "id": "iphone-6s", "model": "iPhone 6s", "year": 2015, "variants": [
+      { "storage": "16GB", "price_twd": 23900 },
+      { "storage": "64GB", "price_twd": 27900 },
+      { "storage": "128GB", "price_twd": 31900 }
+    ]},
+    { "id": "iphone-6-plus", "model": "iPhone 6 Plus", "year": 2014, "variants": [
+      { "storage": "16GB", "price_twd": 26900 },
+      { "storage": "64GB", "price_twd": 30900 },
+      { "storage": "128GB", "price_twd": 34900 }
+    ]},
+    { "id": "iphone-6", "model": "iPhone 6", "year": 2014, "variants": [
+      { "storage": "16GB", "price_twd": 21900 },
+      { "storage": "64GB", "price_twd": 25900 },
+      { "storage": "128GB", "price_twd": 29900 }
+    ]},
+    { "id": "iphone-5s", "model": "iPhone 5s", "year": 2013, "variants": [
+      { "storage": "16GB", "price_twd": 21900 },
+      { "storage": "32GB", "price_twd": 24900 },
+      { "storage": "64GB", "price_twd": 27900 }
+    ]},
+    { "id": "iphone-5c", "model": "iPhone 5c", "year": 2013, "variants": [
+      { "storage": "16GB", "price_twd": 17900 },
+      { "storage": "32GB", "price_twd": 20900 }
+    ]},
+    { "id": "iphone-5", "model": "iPhone 5", "year": 2012, "variants": [
+      { "storage": "16GB", "price_twd": 21900 },
+      { "storage": "32GB", "price_twd": 24900 },
+      { "storage": "64GB", "price_twd": 27900 }
+    ]},
+    { "id": "iphone-4s", "model": "iPhone 4S", "year": 2011, "variants": [
+      { "storage": "16GB", "price_twd": 18900 },
+      { "storage": "32GB", "price_twd": 21900 },
+      { "storage": "64GB", "price_twd": 24900 }
+    ]},
+    { "id": "iphone-4", "model": "iPhone 4", "year": 2010, "variants": [
+      { "storage": "16GB", "price_twd": 18900 },
+      { "storage": "32GB", "price_twd": 21900 }
+    ]},
+    { "id": "iphone-3gs", "model": "iPhone 3GS", "year": 2009, "variants": [
+      { "storage": "16GB", "price_twd": 16900 },
+      { "storage": "32GB", "price_twd": 19900 }
+    ]},
+    { "id": "iphone-3g", "model": "iPhone 3G", "year": 2008, "variants": [
+      { "storage": "8GB", "price_twd": 15900 },
+      { "storage": "16GB", "price_twd": 18900 }
+    ]},
+    { "id": "iphone-1", "model": "iPhone 1", "year": 2007, "variants": [
+      { "storage": "4GB", "price_twd": 14900 },
+      { "storage": "8GB", "price_twd": 17900 }
+    ]}
   ],
   "mac": [
-    {
-      "id": "macbook-air-m1",
-      "model": "MacBook Air M1",
-      "year": 2020,
-      "variants": [
-        { "storage": "8GB/256GB", "price_twd": 32900 },
-        { "storage": "8GB/512GB", "price_twd": 40900 }
-      ]
-    },
-    {
-      "id": "macbook-air-m2",
-      "model": "MacBook Air M2",
-      "year": 2022,
-      "variants": [
-        { "storage": "8GB/256GB", "price_twd": 37900 },
-        { "storage": "8GB/512GB", "price_twd": 45900 }
-      ]
-    },
-    {
-      "id": "macbook-air-m3",
-      "model": "MacBook Air M3",
-      "year": 2024,
-      "variants": [
-        { "storage": "8GB/256GB", "price_twd": 38900 },
-        { "storage": "16GB/512GB", "price_twd": 52900 }
-      ]
-    },
-    {
-      "id": "macbook-pro-14-m3",
-      "model": "MacBook Pro 14吋 M3",
-      "year": 2023,
-      "variants": [
-        { "storage": "8GB/512GB", "price_twd": 59900 },
-        { "storage": "18GB/512GB", "price_twd": 71900 }
-      ]
-    },
-    {
-      "id": "mac-mini-m4",
-      "model": "Mac mini M4",
-      "year": 2024,
-      "variants": [
-        { "storage": "16GB/256GB", "price_twd": 19900 },
-        { "storage": "24GB/512GB", "price_twd": 27900 }
-      ]
-    }
+    { "id": "mac-studio-m4-ultra", "model": "Mac Studio M4 Ultra", "year": 2025, "variants": [
+      { "storage": "512GB", "price_twd": 149900 },
+      { "storage": "1TB", "price_twd": 164900 }
+    ]},
+    { "id": "mac-studio-m4-max", "model": "Mac Studio M4 Max", "year": 2025, "variants": [
+      { "storage": "512GB", "price_twd": 79900 },
+      { "storage": "1TB", "price_twd": 94900 }
+    ]},
+    { "id": "macbook-air-15-m4", "model": "MacBook Air 15\" M4", "year": 2025, "variants": [
+      { "storage": "256GB", "price_twd": 41900 },
+      { "storage": "512GB", "price_twd": 49900 },
+      { "storage": "1TB", "price_twd": 59900 }
+    ]},
+    { "id": "macbook-air-13-m4", "model": "MacBook Air 13\" M4", "year": 2025, "variants": [
+      { "storage": "256GB", "price_twd": 34900 },
+      { "storage": "512GB", "price_twd": 42900 },
+      { "storage": "1TB", "price_twd": 52900 }
+    ]},
+    { "id": "macbook-pro-16-m4-max", "model": "MacBook Pro 16\" M4 Max", "year": 2024, "variants": [
+      { "storage": "512GB", "price_twd": 119900 },
+      { "storage": "1TB", "price_twd": 134900 }
+    ]},
+    { "id": "macbook-pro-16-m4-pro", "model": "MacBook Pro 16\" M4 Pro", "year": 2024, "variants": [
+      { "storage": "512GB", "price_twd": 84900 },
+      { "storage": "1TB", "price_twd": 97900 }
+    ]},
+    { "id": "macbook-pro-14-m4-max", "model": "MacBook Pro 14\" M4 Max", "year": 2024, "variants": [
+      { "storage": "512GB", "price_twd": 109900 },
+      { "storage": "1TB", "price_twd": 124900 }
+    ]},
+    { "id": "macbook-pro-14-m4-pro", "model": "MacBook Pro 14\" M4 Pro", "year": 2024, "variants": [
+      { "storage": "512GB", "price_twd": 74900 },
+      { "storage": "1TB", "price_twd": 87900 }
+    ]},
+    { "id": "macbook-pro-14-m4", "model": "MacBook Pro 14\" M4", "year": 2024, "variants": [
+      { "storage": "512GB", "price_twd": 59900 },
+      { "storage": "1TB", "price_twd": 69900 }
+    ]},
+    { "id": "imac-m4", "model": "iMac M4", "year": 2024, "variants": [
+      { "storage": "256GB", "price_twd": 46900 },
+      { "storage": "512GB", "price_twd": 54900 },
+      { "storage": "1TB", "price_twd": 64900 }
+    ]},
+    { "id": "mac-mini-m4-pro", "model": "Mac mini M4 Pro", "year": 2024, "variants": [
+      { "storage": "512GB", "price_twd": 42900 },
+      { "storage": "1TB", "price_twd": 54900 }
+    ]},
+    { "id": "mac-mini-m4", "model": "Mac mini M4", "year": 2024, "variants": [
+      { "storage": "256GB", "price_twd": 21900 },
+      { "storage": "512GB", "price_twd": 27900 }
+    ]},
+    { "id": "mac-pro-m2-ultra", "model": "Mac Pro M2 Ultra", "year": 2023, "variants": [
+      { "storage": "1TB", "price_twd": 239900 },
+      { "storage": "2TB", "price_twd": 269900 }
+    ]},
+    { "id": "mac-studio-m2-ultra", "model": "Mac Studio M2 Ultra", "year": 2023, "variants": [
+      { "storage": "1TB", "price_twd": 129900 },
+      { "storage": "2TB", "price_twd": 154900 }
+    ]},
+    { "id": "mac-studio-m2-max", "model": "Mac Studio M2 Max", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 69900 },
+      { "storage": "1TB", "price_twd": 84900 }
+    ]},
+    { "id": "macbook-pro-16-m3-max", "model": "MacBook Pro 16\" M3 Max", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 109900 },
+      { "storage": "1TB", "price_twd": 124900 }
+    ]},
+    { "id": "macbook-pro-16-m3-pro", "model": "MacBook Pro 16\" M3 Pro", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 79900 },
+      { "storage": "1TB", "price_twd": 92900 }
+    ]},
+    { "id": "macbook-pro-14-m3-max", "model": "MacBook Pro 14\" M3 Max", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 99900 },
+      { "storage": "1TB", "price_twd": 114900 }
+    ]},
+    { "id": "macbook-pro-14-m3-pro", "model": "MacBook Pro 14\" M3 Pro", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 69900 },
+      { "storage": "1TB", "price_twd": 82900 }
+    ]},
+    { "id": "macbook-pro-14-m3", "model": "MacBook Pro 14\" M3", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 54900 },
+      { "storage": "1TB", "price_twd": 64900 }
+    ]},
+    { "id": "imac-m3", "model": "iMac M3", "year": 2023, "variants": [
+      { "storage": "256GB", "price_twd": 44900 },
+      { "storage": "512GB", "price_twd": 52900 },
+      { "storage": "1TB", "price_twd": 62900 }
+    ]},
+    { "id": "macbook-air-15-m2", "model": "MacBook Air 15\" M2", "year": 2023, "variants": [
+      { "storage": "256GB", "price_twd": 39900 },
+      { "storage": "512GB", "price_twd": 47900 }
+    ]},
+    { "id": "mac-mini-m2-pro", "model": "Mac mini M2 Pro", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 37900 },
+      { "storage": "1TB", "price_twd": 47900 }
+    ]},
+    { "id": "mac-mini-m2", "model": "Mac mini M2", "year": 2023, "variants": [
+      { "storage": "256GB", "price_twd": 18900 },
+      { "storage": "512GB", "price_twd": 24900 }
+    ]},
+    { "id": "macbook-pro-16-m2-max", "model": "MacBook Pro 16\" M2 Max", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 104900 },
+      { "storage": "1TB", "price_twd": 119900 }
+    ]},
+    { "id": "macbook-pro-14-m2-pro", "model": "MacBook Pro 14\" M2 Pro", "year": 2023, "variants": [
+      { "storage": "512GB", "price_twd": 64900 },
+      { "storage": "1TB", "price_twd": 77900 }
+    ]},
+    { "id": "macbook-air-13-m2", "model": "MacBook Air 13\" M2", "year": 2022, "variants": [
+      { "storage": "256GB", "price_twd": 35900 },
+      { "storage": "512GB", "price_twd": 43900 },
+      { "storage": "1TB", "price_twd": 53900 }
+    ]},
+    { "id": "macbook-air-13-m1", "model": "MacBook Air 13\" M1", "year": 2020, "variants": [
+      { "storage": "256GB", "price_twd": 29900 },
+      { "storage": "512GB", "price_twd": 37900 }
+    ]},
+    { "id": "macbook-pro-13-m1", "model": "MacBook Pro 13\" M1", "year": 2020, "variants": [
+      { "storage": "256GB", "price_twd": 36900 },
+      { "storage": "512GB", "price_twd": 44900 }
+    ]},
+    { "id": "mac-mini-m1", "model": "Mac mini M1", "year": 2020, "variants": [
+      { "storage": "256GB", "price_twd": 18900 },
+      { "storage": "512GB", "price_twd": 24900 }
+    ]}
   ],
   "ipad": [
-    {
-      "id": "ipad-10",
-      "model": "iPad (10代)",
-      "year": 2022,
-      "variants": [
-        { "storage": "64GB WiFi", "price_twd": 14900 },
-        { "storage": "256GB WiFi", "price_twd": 22900 }
-      ]
-    },
-    {
-      "id": "ipad-air-m2",
-      "model": "iPad Air M2",
-      "year": 2024,
-      "variants": [
-        { "storage": "128GB WiFi", "price_twd": 21900 },
-        { "storage": "256GB WiFi", "price_twd": 25900 }
-      ]
-    },
-    {
-      "id": "ipad-pro-13-m4",
-      "model": "iPad Pro 13吋 M4",
-      "year": 2024,
-      "variants": [
-        { "storage": "256GB WiFi", "price_twd": 43900 },
-        { "storage": "512GB WiFi", "price_twd": 51900 }
-      ]
-    },
-    {
-      "id": "ipad-mini-7",
-      "model": "iPad mini (7代)",
-      "year": 2024,
-      "variants": [
-        { "storage": "128GB WiFi", "price_twd": 16900 },
-        { "storage": "256GB WiFi", "price_twd": 20900 }
-      ]
-    }
+    { "id": "ipad-air-13-m3", "model": "iPad Air 13\" M3", "year": 2025, "variants": [
+      { "storage": "128GB", "price_twd": 26900 },
+      { "storage": "256GB", "price_twd": 29900 },
+      { "storage": "512GB", "price_twd": 35900 },
+      { "storage": "1TB", "price_twd": 41900 }
+    ]},
+    { "id": "ipad-air-11-m3", "model": "iPad Air 11\" M3", "year": 2025, "variants": [
+      { "storage": "128GB", "price_twd": 19900 },
+      { "storage": "256GB", "price_twd": 22900 },
+      { "storage": "512GB", "price_twd": 28900 },
+      { "storage": "1TB", "price_twd": 34900 }
+    ]},
+    { "id": "ipad-pro-13-m4", "model": "iPad Pro 13\" M4", "year": 2024, "variants": [
+      { "storage": "256GB", "price_twd": 39900 },
+      { "storage": "512GB", "price_twd": 46900 },
+      { "storage": "1TB", "price_twd": 59900 },
+      { "storage": "2TB", "price_twd": 72900 }
+    ]},
+    { "id": "ipad-pro-11-m4", "model": "iPad Pro 11\" M4", "year": 2024, "variants": [
+      { "storage": "256GB", "price_twd": 29900 },
+      { "storage": "512GB", "price_twd": 36900 },
+      { "storage": "1TB", "price_twd": 49900 },
+      { "storage": "2TB", "price_twd": 62900 }
+    ]},
+    { "id": "ipad-mini-7", "model": "iPad mini 7", "year": 2024, "variants": [
+      { "storage": "128GB", "price_twd": 16900 },
+      { "storage": "256GB", "price_twd": 19900 },
+      { "storage": "512GB", "price_twd": 25900 }
+    ]},
+    { "id": "ipad-air-13-m2", "model": "iPad Air 13\" M2", "year": 2024, "variants": [
+      { "storage": "128GB", "price_twd": 24900 },
+      { "storage": "256GB", "price_twd": 27900 },
+      { "storage": "512GB", "price_twd": 33900 },
+      { "storage": "1TB", "price_twd": 39900 }
+    ]},
+    { "id": "ipad-air-11-m2", "model": "iPad Air 11\" M2", "year": 2024, "variants": [
+      { "storage": "128GB", "price_twd": 18900 },
+      { "storage": "256GB", "price_twd": 21900 },
+      { "storage": "512GB", "price_twd": 27900 },
+      { "storage": "1TB", "price_twd": 33900 }
+    ]},
+    { "id": "ipad-10", "model": "iPad 10", "year": 2022, "variants": [
+      { "storage": "64GB", "price_twd": 12900 },
+      { "storage": "256GB", "price_twd": 17900 }
+    ]},
+    { "id": "ipad-pro-12-m2", "model": "iPad Pro 12.9\" M2", "year": 2022, "variants": [
+      { "storage": "128GB", "price_twd": 32900 },
+      { "storage": "256GB", "price_twd": 36900 },
+      { "storage": "512GB", "price_twd": 44900 },
+      { "storage": "1TB", "price_twd": 56900 },
+      { "storage": "2TB", "price_twd": 68900 }
+    ]},
+    { "id": "ipad-pro-11-m2", "model": "iPad Pro 11\" M2", "year": 2022, "variants": [
+      { "storage": "128GB", "price_twd": 24900 },
+      { "storage": "256GB", "price_twd": 28900 },
+      { "storage": "512GB", "price_twd": 36900 },
+      { "storage": "1TB", "price_twd": 48900 },
+      { "storage": "2TB", "price_twd": 60900 }
+    ]},
+    { "id": "ipad-mini-6", "model": "iPad mini 6", "year": 2021, "variants": [
+      { "storage": "64GB", "price_twd": 14900 },
+      { "storage": "256GB", "price_twd": 19900 }
+    ]},
+    { "id": "ipad-9", "model": "iPad 9", "year": 2021, "variants": [
+      { "storage": "64GB", "price_twd": 10900 },
+      { "storage": "256GB", "price_twd": 15900 }
+    ]}
   ],
   "wearable": [
-    {
-      "id": "airpods-pro-2",
-      "model": "AirPods Pro (2代)",
-      "year": 2022,
-      "variants": [
-        { "storage": "標準版", "price_twd": 8490 }
-      ]
-    },
-    {
-      "id": "airpods-4",
-      "model": "AirPods 4",
-      "year": 2024,
-      "variants": [
-        { "storage": "標準版", "price_twd": 5490 }
-      ]
-    },
-    {
-      "id": "airpods-max",
-      "model": "AirPods Max",
-      "year": 2020,
-      "variants": [
-        { "storage": "標準版", "price_twd": 19490 }
-      ]
-    },
-    {
-      "id": "apple-watch-s10",
-      "model": "Apple Watch Series 10",
-      "year": 2024,
-      "variants": [
-        { "storage": "42mm", "price_twd": 12900 },
-        { "storage": "46mm", "price_twd": 13900 }
-      ]
-    },
-    {
-      "id": "apple-watch-ultra-2",
-      "model": "Apple Watch Ultra 2",
-      "year": 2023,
-      "variants": [
-        { "storage": "49mm", "price_twd": 29900 }
-      ]
-    },
-    {
-      "id": "homepod-2",
-      "model": "HomePod (2代)",
-      "year": 2023,
-      "variants": [
-        { "storage": "標準版", "price_twd": 9900 }
-      ]
-    },
-    {
-      "id": "homepod-mini",
-      "model": "HomePod mini",
-      "year": 2020,
-      "variants": [
-        { "storage": "標準版", "price_twd": 3300 }
-      ]
-    }
+    { "id": "vision-pro", "model": "Apple Vision Pro", "year": 2024, "variants": [
+      { "storage": "256GB", "price_twd": 112900 },
+      { "storage": "512GB", "price_twd": 119900 },
+      { "storage": "1TB", "price_twd": 129900 }
+    ]},
+    { "id": "apple-watch-ultra-2", "model": "Apple Watch Ultra 2", "year": 2024, "variants": [
+      { "storage": "一般版", "price_twd": 31900 },
+      { "storage": "黑色版", "price_twd": 31900 }
+    ]},
+    { "id": "apple-watch-s10", "model": "Apple Watch Series 10", "year": 2024, "variants": [
+      { "storage": "42mm", "price_twd": 13900 },
+      { "storage": "46mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-se-2", "model": "Apple Watch SE 2", "year": 2022, "variants": [
+      { "storage": "40mm", "price_twd": 8900 },
+      { "storage": "44mm", "price_twd": 9900 }
+    ]},
+    { "id": "apple-watch-ultra-1", "model": "Apple Watch Ultra", "year": 2022, "variants": [
+      { "storage": "49mm", "price_twd": 29900 }
+    ]},
+    { "id": "apple-watch-s9", "model": "Apple Watch Series 9", "year": 2023, "variants": [
+      { "storage": "41mm", "price_twd": 13900 },
+      { "storage": "45mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-s8", "model": "Apple Watch Series 8", "year": 2022, "variants": [
+      { "storage": "41mm", "price_twd": 13900 },
+      { "storage": "45mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-s7", "model": "Apple Watch Series 7", "year": 2021, "variants": [
+      { "storage": "41mm", "price_twd": 13900 },
+      { "storage": "45mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-s6", "model": "Apple Watch Series 6", "year": 2020, "variants": [
+      { "storage": "40mm", "price_twd": 13900 },
+      { "storage": "44mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-s5", "model": "Apple Watch Series 5", "year": 2019, "variants": [
+      { "storage": "40mm", "price_twd": 13900 },
+      { "storage": "44mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-s4", "model": "Apple Watch Series 4", "year": 2018, "variants": [
+      { "storage": "40mm", "price_twd": 13900 },
+      { "storage": "44mm", "price_twd": 14900 }
+    ]},
+    { "id": "apple-watch-s3", "model": "Apple Watch Series 3", "year": 2017, "variants": [
+      { "storage": "38mm", "price_twd": 9900 },
+      { "storage": "42mm", "price_twd": 10900 }
+    ]},
+    { "id": "apple-watch-s1", "model": "Apple Watch Series 1", "year": 2016, "variants": [
+      { "storage": "38mm", "price_twd": 9900 },
+      { "storage": "42mm", "price_twd": 10900 }
+    ]},
+    { "id": "airpods-4-anc", "model": "AirPods 4 ANC", "year": 2024, "variants": [
+      { "storage": "標準版", "price_twd": 5990 }
+    ]},
+    { "id": "airpods-4", "model": "AirPods 4", "year": 2024, "variants": [
+      { "storage": "標準版", "price_twd": 4490 }
+    ]},
+    { "id": "airpods-pro-2", "model": "AirPods Pro 2", "year": 2022, "variants": [
+      { "storage": "USB-C", "price_twd": 7990 }
+    ]},
+    { "id": "airpods-pro-1", "model": "AirPods Pro 1", "year": 2019, "variants": [
+      { "storage": "標準版", "price_twd": 7490 }
+    ]},
+    { "id": "airpods-3", "model": "AirPods 3", "year": 2021, "variants": [
+      { "storage": "標準版", "price_twd": 5490 }
+    ]},
+    { "id": "airpods-2", "model": "AirPods 2", "year": 2019, "variants": [
+      { "storage": "標準版", "price_twd": 4490 }
+    ]},
+    { "id": "airpods-max-2", "model": "AirPods Max 2", "year": 2024, "variants": [
+      { "storage": "USB-C", "price_twd": 18990 }
+    ]},
+    { "id": "airpods-max-1", "model": "AirPods Max 1", "year": 2020, "variants": [
+      { "storage": "Lightning", "price_twd": 18990 }
+    ]},
+    { "id": "homepod-2", "model": "HomePod 2", "year": 2023, "variants": [
+      { "storage": "標準版", "price_twd": 9900 }
+    ]},
+    { "id": "homepod-mini", "model": "HomePod mini", "year": 2020, "variants": [
+      { "storage": "標準版", "price_twd": 3300 }
+    ]},
+    { "id": "homepod-1", "model": "HomePod 1", "year": 2018, "variants": [
+      { "storage": "標準版", "price_twd": 10900 }
+    ]}
   ],
   "subscription": [
-    {
-      "id": "apple-music-individual",
-      "model": "Apple Music 個人",
-      "year": 2015,
-      "monthly_price_twd": 150,
-      "variants": [
-        { "storage": "1年", "years": 1, "price_twd": 1800 },
-        { "storage": "2年", "years": 2, "price_twd": 3600 },
-        { "storage": "3年", "years": 3, "price_twd": 5400 },
-        { "storage": "5年", "years": 5, "price_twd": 9000 }
-      ]
-    },
-    {
-      "id": "icloud-50gb",
-      "model": "iCloud+ 50GB",
-      "year": 2014,
-      "monthly_price_twd": 30,
-      "variants": [
-        { "storage": "1年", "years": 1, "price_twd": 360 },
-        { "storage": "3年", "years": 3, "price_twd": 1080 },
-        { "storage": "5年", "years": 5, "price_twd": 1800 }
-      ]
-    },
-    {
-      "id": "icloud-200gb",
-      "model": "iCloud+ 200GB",
-      "year": 2014,
-      "monthly_price_twd": 90,
-      "variants": [
-        { "storage": "1年", "years": 1, "price_twd": 1080 },
-        { "storage": "3年", "years": 3, "price_twd": 3240 },
-        { "storage": "5年", "years": 5, "price_twd": 5400 }
-      ]
-    },
-    {
-      "id": "icloud-2tb",
-      "model": "iCloud+ 2TB",
-      "year": 2016,
-      "monthly_price_twd": 330,
-      "variants": [
-        { "storage": "1年", "years": 1, "price_twd": 3960 },
-        { "storage": "3年", "years": 3, "price_twd": 11880 },
-        { "storage": "5年", "years": 5, "price_twd": 19800 }
-      ]
-    },
-    {
-      "id": "apple-tv-plus",
-      "model": "Apple TV+",
-      "year": 2019,
-      "monthly_price_twd": 170,
-      "variants": [
-        { "storage": "1年", "years": 1, "price_twd": 2040 },
-        { "storage": "2年", "years": 2, "price_twd": 4080 }
-      ]
-    },
-    {
-      "id": "apple-one",
-      "model": "Apple One 個人",
-      "year": 2020,
-      "monthly_price_twd": 370,
-      "variants": [
-        { "storage": "1年", "years": 1, "price_twd": 4440 },
-        { "storage": "3年", "years": 3, "price_twd": 13320 }
-      ]
-    }
+    { "id": "icloud-12tb", "model": "iCloud+ 12TB", "year": 2023, "variants": [
+      { "storage": "12TB", "price_twd": 0, "monthly_price_twd": 1090 }
+    ]},
+    { "id": "icloud-6tb", "model": "iCloud+ 6TB", "year": 2023, "variants": [
+      { "storage": "6TB", "price_twd": 0, "monthly_price_twd": 550 }
+    ]},
+    { "id": "icloud-2tb", "model": "iCloud+ 2TB", "year": 2017, "variants": [
+      { "storage": "2TB", "price_twd": 0, "monthly_price_twd": 130 }
+    ]},
+    { "id": "icloud-200gb", "model": "iCloud+ 200GB", "year": 2014, "variants": [
+      { "storage": "200GB", "price_twd": 0, "monthly_price_twd": 33 }
+    ]},
+    { "id": "icloud-50gb", "model": "iCloud+ 50GB", "year": 2014, "variants": [
+      { "storage": "50GB", "price_twd": 0, "monthly_price_twd": 11 }
+    ]},
+    { "id": "apple-one-family", "model": "Apple One 家庭版", "year": 2020, "variants": [
+      { "storage": "家庭版", "price_twd": 0, "monthly_price_twd": 420 }
+    ]},
+    { "id": "apple-one", "model": "Apple One 個人版", "year": 2020, "variants": [
+      { "storage": "個人版", "price_twd": 0, "monthly_price_twd": 255 }
+    ]},
+    { "id": "apple-music-family", "model": "Apple Music 家庭版", "year": 2015, "variants": [
+      { "storage": "家庭版", "price_twd": 0, "monthly_price_twd": 199 }
+    ]},
+    { "id": "apple-music-individual", "model": "Apple Music 個人版", "year": 2015, "variants": [
+      { "storage": "個人版", "price_twd": 0, "monthly_price_twd": 149 }
+    ]},
+    { "id": "apple-music-student", "model": "Apple Music 學生版", "year": 2015, "variants": [
+      { "storage": "學生版", "price_twd": 0, "monthly_price_twd": 75 }
+    ]},
+    { "id": "apple-tv-plus", "model": "Apple TV+", "year": 2019, "variants": [
+      { "storage": "標準版", "price_twd": 0, "monthly_price_twd": 149 }
+    ]},
+    { "id": "apple-arcade", "model": "Apple Arcade", "year": 2019, "variants": [
+      { "storage": "標準版", "price_twd": 0, "monthly_price_twd": 98 }
+    ]}
   ]
 }
