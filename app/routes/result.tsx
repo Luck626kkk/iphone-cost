@@ -8,12 +8,19 @@ import type { Selection } from '~/lib/types'
 
 export const meta: MetaFunction = ({ location }) => {
   const params = new URLSearchParams(location.search)
-  const total = params.get('total')
-  const grade = params.get('grade')
+  const total = parseInt(params.get('total') ?? '0', 10)
+  const formatted = total > 0 ? total.toLocaleString() : '?'
+  const ogUrl = `https://iphone-cost.pages.dev/api/og?total=${total}`
+
   return [
-    { title: total ? `NT$${Number(total).toLocaleString()} — 花蘋果` : '花蘋果 — 你的 Apple 稅' },
-    { name: 'description', content: `我的 Apple 稅：NT$${total ?? '???'}，等級：${grade ?? '?'}` },
-    { property: 'og:image', content: total ? `/api/og?total=${total}&grade=${grade}` : '' },
+    { title: total > 0 ? `我在蘋果花了 NT$${formatted} — 花蘋果` : '花蘋果 — 你的 Apple 稅' },
+    { name: 'description', content: total > 0 ? `歷年 Apple 花費 NT$${formatted}。你的結果是什麼？` : '計算你歷年貢獻 Apple 多少錢' },
+    { property: 'og:title', content: `我在蘋果花了 NT$${formatted}` },
+    { property: 'og:image', content: ogUrl },
+    { property: 'og:url', content: 'https://iphone-cost.pages.dev/result' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: ogUrl },
+    { name: 'robots', content: 'noindex, nofollow' },
   ]
 }
 

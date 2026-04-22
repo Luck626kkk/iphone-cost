@@ -4,7 +4,14 @@ import { LogoMark } from '~/components/LogoMark'
 
 export const meta: MetaFunction = () => [
   { title: '花蘋果 — 你花了多少在蘋果上？' },
-  { name: 'description', content: '30 秒算出你這輩子在 Apple 上花了多少錢。iPhone、Mac、iPad、訂閱服務全算上。' },
+  { name: 'description', content: '計算你歷年買 iPhone、Mac、iPad、訂閱服務的總花費，以及如果當初買 AAPL 股票能賺多少。' },
+  { property: 'og:title', content: '花蘋果 — 你花了多少在蘋果上？' },
+  { property: 'og:description', content: '計算你的蘋果人生花費，結果以 Apple Store 收據樣式呈現。' },
+  { property: 'og:image', content: 'https://iphone-cost.pages.dev/og-default.png' },
+  { property: 'og:url', content: 'https://iphone-cost.pages.dev/' },
+  { name: 'twitter:title', content: '花蘋果 — 你花了多少在蘋果上？' },
+  { name: 'twitter:description', content: '計算你歷年貢獻 Apple 多少錢' },
+  { name: 'twitter:image', content: 'https://iphone-cost.pages.dev/og-default.png' },
 ]
 
 export default function Home() {

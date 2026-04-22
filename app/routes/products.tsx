@@ -30,7 +30,7 @@ export default function Products() {
 
   const handleCalculate = () => {
     sessionStorage.setItem('apple-tax-selections', JSON.stringify(selections))
-    navigate('/result')
+    navigate(`/result?total=${total}`)
   }
 
   return (

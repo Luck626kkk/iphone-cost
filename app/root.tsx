@@ -6,9 +6,17 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import type { MetaFunction } from "react-router";
 
 import type { Route } from "./+types/root";
 import "./app.css";
+
+export const meta: MetaFunction = () => [
+  { charset: 'utf-8' },
+  { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+  { property: 'og:type', content: 'website' },
+  { name: 'twitter:card', content: 'summary_large_image' },
+]
 
 export const links: Route.LinksFunction = () => [
   { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },

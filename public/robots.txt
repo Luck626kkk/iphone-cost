@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /result
+Disallow: /api/
+
+Sitemap: https://iphone-cost.pages.dev/sitemap.xml
