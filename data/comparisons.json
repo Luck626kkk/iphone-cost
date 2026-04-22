@@ -1,0 +1,68 @@
+{
+  "comparisons": [
+    {
+      "id": "starbucks",
+      "name": "星巴克拿鐵",
+      "price_twd": 165,
+      "emoji": "☕",
+      "unit": "杯",
+      "trigger_min": 10000
+    },
+    {
+      "id": "chicken-cutlet",
+      "name": "超商雞排年份",
+      "price_twd": 18250,
+      "emoji": "🍗",
+      "unit": "年份的超商雞排",
+      "trigger_min": 10000
+    },
+    {
+      "id": "japan-trip",
+      "name": "日本旅遊",
+      "price_twd": 45000,
+      "emoji": "🗼",
+      "unit": "次",
+      "trigger_min": 30000
+    },
+    {
+      "id": "iphone17-pro-max",
+      "name": "iPhone 17 Pro Max",
+      "price_twd": 45900,
+      "emoji": "📱",
+      "unit": "支",
+      "trigger_min": 30000
+    },
+    {
+      "id": "macbook-pro-m5",
+      "name": "MacBook Pro M5",
+      "price_twd": 75000,
+      "emoji": "💻",
+      "unit": "台",
+      "trigger_min": 50000
+    },
+    {
+      "id": "tim-cook-minutes",
+      "name": "Tim Cook 分鐘薪水",
+      "price_twd": 1141,
+      "emoji": "👔",
+      "unit": "分鐘",
+      "trigger_min": 50000
+    },
+    {
+      "id": "taipei-rent",
+      "name": "台北一房月租",
+      "price_twd": 25000,
+      "emoji": "🏠",
+      "unit": "個月",
+      "trigger_min": 100000
+    },
+    {
+      "id": "tsmc-share",
+      "name": "台積電股票",
+      "price_twd": 115000,
+      "emoji": "📈",
+      "unit": "張",
+      "trigger_min": 115000
+    }
+  ]
+}

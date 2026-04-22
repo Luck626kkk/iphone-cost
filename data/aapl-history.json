@@ -1,0 +1,24 @@
+{
+  "AAPL_historical": [
+    { "year": 2007, "close_usd": 6.71 },
+    { "year": 2008, "close_usd": 2.99 },
+    { "year": 2009, "close_usd": 7.08 },
+    { "year": 2010, "close_usd": 10.43 },
+    { "year": 2011, "close_usd": 13.41 },
+    { "year": 2012, "close_usd": 19.02 },
+    { "year": 2013, "close_usd": 20.04 },
+    { "year": 2014, "close_usd": 27.59 },
+    { "year": 2015, "close_usd": 26.32 },
+    { "year": 2016, "close_usd": 28.95 },
+    { "year": 2017, "close_usd": 42.31 },
+    { "year": 2018, "close_usd": 39.44 },
+    { "year": 2019, "close_usd": 73.41 },
+    { "year": 2020, "close_usd": 132.69 },
+    { "year": 2021, "close_usd": 177.57 },
+    { "year": 2022, "close_usd": 129.93 },
+    { "year": 2023, "close_usd": 192.53 },
+    { "year": 2024, "close_usd": 243.04 },
+    { "year": 2025, "close_usd": 207.00 }
+  ],
+  "usd_twd_rate": 31
+}
