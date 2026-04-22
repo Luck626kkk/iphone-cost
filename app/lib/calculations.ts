@@ -17,11 +17,10 @@ export function getGrade(total: number): Grade {
 
 export function calcAAPL(totalTWD: number, baseYear: number): AAPLResult {
   const history = aaplData.AAPL_historical
-  const currentYear = new Date().getFullYear()
   const baseEntry = history.find(h => h.year === baseYear)
   const latestEntry = history[history.length - 1]
 
-  if (!baseEntry || baseYear < 2007 || baseYear > currentYear) {
+  if (!baseEntry || baseYear < 2007 || baseYear > latestEntry.year) {
     return { invested: totalTWD, currentValue: totalTWD, gain: 0, baseYear }
   }
 
