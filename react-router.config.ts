@@ -1,7 +1,7 @@
 import type { Config } from "@react-router/dev/config";
+import { cloudflarePages } from "@react-router/cloudflare";
 
 export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
   ssr: true,
+  presets: [cloudflarePages()],
 } satisfies Config;
