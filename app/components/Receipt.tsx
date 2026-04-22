@@ -1,5 +1,4 @@
-import { useRef } from 'react'
-import CountUp from 'react-countup'
+import React, { useRef, useState, useEffect } from 'react'
 import { GradeBadge } from './GradeBadge'
 import { AAPLBlock } from './AAPLBlock'
 import { ComparisonItems } from './ComparisonItems'
@@ -14,6 +13,11 @@ interface Props {
 const DIVIDER = '- - - - - - - - - - - - - - -'
 
 export function Receipt({ selections, total }: Props) {
+  const [CountUp, setCountUp] = useState<React.ComponentType<{ end: number; duration: number; separator: string; useEasing: boolean }> | null>(null)
+  useEffect(() => {
+    import('react-countup').then(m => setCountUp(() => m.default))
+  }, [])
+
   const baseYear = selections.length > 0
     ? Math.min(...selections.map(s => s.year))
     : new Date().getFullYear()
@@ -89,7 +93,10 @@ export function Receipt({ selections, total }: Props) {
           <div className="text-center mb-2">
             <div className="text-sm text-[#6e6e73] mb-1">你的 Apple 稅</div>
             <div className="text-4xl font-bold text-[#FF9F0A]">
-              NT$<CountUp end={total} duration={1.5} separator="," useEasing />
+              {CountUp
+                ? <CountUp end={total} duration={1.5} separator="," useEasing />
+                : total.toLocaleString()
+              }
             </div>
           </div>
 
