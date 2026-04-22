@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ProductCard } from './ProductCard'
+import { SubscriptionCard } from './SubscriptionCard'
 import type { Selection } from '~/lib/types'
 import productsData from '../../data/products.json'
 
@@ -11,26 +12,14 @@ const TABS = [
   { key: 'subscription', label: '訂閱', emoji: '☁️' },
 ] as const
 
-const QUICK_PICKS: Record<string, string[]> = {
-  iphone: ['iphone-16-pro-max', 'iphone-13', 'iphone-se-3'],
-  mac: ['macbook-air-m3', 'macbook-pro-14-m3', 'mac-mini-m4'],
-  ipad: ['ipad-pro-13-m4', 'ipad-air-m2', 'ipad-mini-7'],
-  wearable: ['airpods-pro-2', 'apple-watch-s10', 'homepod-mini'],
-  subscription: ['icloud-200gb', 'apple-music-individual', 'apple-one'],
-}
-
 interface Props {
   selections: Selection[]
-  onToggle: (selection: Selection) => void
+  onUpdate: (selection: Selection, quantity: number) => void
 }
 
-export function ProductTabs({ selections, onToggle }: Props) {
+export function ProductTabs({ selections, onUpdate }: Props) {
   const [activeTab, setActiveTab] = useState<string>('iphone')
-
   const products = (productsData as Record<string, typeof productsData.iphone>)[activeTab] ?? []
-  const quickPickIds = QUICK_PICKS[activeTab] ?? []
-  const quickPicks = products.filter(p => quickPickIds.includes(p.id))
-  const remaining = products.filter(p => !quickPickIds.includes(p.id))
   const category = activeTab as Selection['category']
 
   return (
@@ -52,43 +41,24 @@ export function ProductTabs({ selections, onToggle }: Props) {
         ))}
       </div>
 
-      {quickPicks.length > 0 && (
-        <div className="mb-6">
-          <div className="text-xs font-medium mb-3 uppercase tracking-wide" style={{ color: '#636366' }}>
-            最常見選擇
-          </div>
-          <div className="grid gap-3">
-            {quickPicks.map(product => (
-              <ProductCard
+      <div className="grid gap-3">
+        {products.map(product =>
+          activeTab === 'subscription'
+            ? <SubscriptionCard
+                key={product.id}
+                product={product}
+                selections={selections}
+                onUpdate={onUpdate}
+              />
+            : <ProductCard
                 key={product.id}
                 product={product}
                 category={category}
                 selections={selections}
-                onToggle={onToggle}
+                onUpdate={onUpdate}
               />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {remaining.length > 0 && (
-        <div>
-          <div className="text-xs font-medium mb-3 uppercase tracking-wide" style={{ color: '#636366' }}>
-            全部型號
-          </div>
-          <div className="grid gap-3">
-            {remaining.map(product => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                category={category}
-                selections={selections}
-                onToggle={onToggle}
-              />
-            ))}
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
