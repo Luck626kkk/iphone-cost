@@ -3,8 +3,6 @@ interface LogoMarkProps {
 }
 
 export function LogoMark({ size = 120 }: LogoMarkProps) {
-  const scale = size / 120
-
   return (
     <svg
       width={size}
