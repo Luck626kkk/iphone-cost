@@ -3,7 +3,7 @@ import aaplData from '../../data/aapl-history.json'
 import comparisonsData from '../../data/comparisons.json'
 
 export function calcTotal(selections: Selection[]): number {
-  return selections.reduce((sum, s) => sum + s.price_twd, 0)
+  return selections.reduce((sum, s) => sum + s.price_twd * s.quantity, 0)
 }
 
 export function getGrade(total: number): Grade {

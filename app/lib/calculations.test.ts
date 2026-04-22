@@ -2,14 +2,18 @@ import { describe, it, expect } from 'vitest'
 import { calcTotal, getGrade, calcAAPL, getComparisons } from './calculations'
 import type { Selection } from './types'
 
-const makeSelection = (price_twd: number, year = 2020): Selection => ({
-  productId: 'test',
-  model: 'Test',
-  variant: '128GB',
-  price_twd,
-  year,
-  category: 'iphone',
-})
+function makeSelection(overrides: Partial<Selection> = {}): Selection {
+  return {
+    productId: 'test',
+    model: 'Test',
+    variant: '128GB',
+    price_twd: 10000,
+    year: 2020,
+    category: 'iphone',
+    quantity: 1,
+    ...overrides,
+  }
+}
 
 describe('calcTotal', () => {
   it('空選擇回傳 0', () => {
@@ -17,16 +21,27 @@ describe('calcTotal', () => {
   })
 
   it('單一 iPhone 選擇加總正確', () => {
-    expect(calcTotal([makeSelection(36900, 2023)])).toBe(36900)
+    expect(calcTotal([makeSelection({ price_twd: 36900, year: 2023 })])).toBe(36900)
   })
 
   it('跨類別多項選擇加總正確', () => {
     const selections: Selection[] = [
-      { ...makeSelection(36900, 2023), category: 'iphone' },
-      { ...makeSelection(38900, 2024), category: 'mac' },
-      { ...makeSelection(3240, 2021), category: 'subscription' },
+      makeSelection({ price_twd: 36900, year: 2023, category: 'iphone' }),
+      makeSelection({ price_twd: 38900, year: 2024, category: 'mac' }),
+      makeSelection({ price_twd: 3240, year: 2021, category: 'subscription' }),
     ]
     expect(calcTotal(selections)).toBe(79040)
+  })
+
+  it('multiplies by quantity', () => {
+    const s = makeSelection({ price_twd: 10000, quantity: 3 })
+    expect(calcTotal([s])).toBe(30000)
+  })
+
+  it('sums multiple selections with different quantities', () => {
+    const a = makeSelection({ price_twd: 30000, quantity: 2 })
+    const b = makeSelection({ price_twd: 10000, quantity: 1 })
+    expect(calcTotal([a, b])).toBe(70000)
   })
 })
 
