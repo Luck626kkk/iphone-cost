@@ -13,16 +13,24 @@ export default function Products() {
   const [selections, setSelections] = useState<Selection[]>([])
   const navigate = useNavigate()
 
-  const handleToggle = useCallback((incoming: Selection) => {
+  const handleUpdate = useCallback((incoming: Selection, quantity: number) => {
     setSelections(prev => {
+      if (quantity <= 0) {
+        return prev.filter(s =>
+          !(s.productId === incoming.productId && s.variant === incoming.variant)
+        )
+      }
       const exists = prev.find(
         s => s.productId === incoming.productId && s.variant === incoming.variant
       )
       if (exists) {
-        return prev.filter(s => !(s.productId === incoming.productId && s.variant === incoming.variant))
+        return prev.map(s =>
+          s.productId === incoming.productId && s.variant === incoming.variant
+            ? { ...s, quantity, price_twd: incoming.price_twd }
+            : s
+        )
       }
-      const withoutSameProduct = prev.filter(s => s.productId !== incoming.productId)
-      return [...withoutSameProduct, incoming]
+      return [...prev, { ...incoming, quantity }]
     })
   }, [])
 
@@ -41,7 +49,7 @@ export default function Products() {
         </h1>
         <p className="mb-8" style={{ color: '#AEAEB2' }}>可以多選，有幾個選幾個</p>
 
-        <ProductTabs selections={selections} onToggle={handleToggle} />
+        <ProductTabs selections={selections} onUpdate={handleUpdate} />
 
         <div className="fixed bottom-0 left-0 right-0 px-4 py-4" style={{ backgroundColor: '#2C2C2E', borderTop: '1px solid #3A3A3C' }}>
           <div className="max-w-lg mx-auto flex items-center justify-between">
