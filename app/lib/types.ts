@@ -1,7 +1,7 @@
 export interface ProductVariant {
   storage: string
   price_twd: number
-  years?: number
+  monthly_price_twd?: number
 }
 
 export interface Product {
@@ -18,6 +18,7 @@ export interface Selection {
   price_twd: number
   year: number
   category: 'iphone' | 'mac' | 'ipad' | 'wearable' | 'subscription'
+  quantity: number
 }
 
 export interface Grade {
