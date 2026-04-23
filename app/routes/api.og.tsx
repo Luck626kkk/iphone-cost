@@ -6,7 +6,7 @@ import { OgCard } from '~/components/OgCard'
 
 // All unique characters rendered in OgCard (static + dynamic)
 const FONT_CHARS =
-  '我的稅蘋果路人愛好者深度使信徒最建議你去上班花 ★NT$0123456789,.iphone-cost.pages.devworksaaa26905677'
+  '我的稅蘋果路人愛好者深度使信徒最建議你去上班花 ★NT$ACTim Cookl0123456789,.iphone-cost.pages.devworksaaa26905677'
 
 // Module-level singletons — survive across warm CF Worker requests
 let resvgReady: Promise<void> | null = null
@@ -17,7 +17,9 @@ function ensureResvg() {
   if (!resvgReady) {
     resvgReady = initWasm(
       fetch('https://cdn.jsdelivr.net/npm/@resvg/resvg-wasm@2.4.0/index_bg.wasm')
-    )
+    ).catch((e: unknown) => {
+      if (!String(e).includes('Already initialized')) throw e
+    })
   }
   return resvgReady
 }

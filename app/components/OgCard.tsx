@@ -16,35 +16,29 @@ export function OgCard({ total, grade }: Props) {
         width: 1080,
         height: 1080,
         backgroundColor: '#1C1C1E',
-        fontFamily: '-apple-system, "PingFang TC", sans-serif',
+        fontFamily: '"Noto Sans TC", sans-serif',
         padding: 80,
       }}
     >
-      <div style={{ fontSize: 120, marginBottom: 40 }}>🍎</div>
-
-      <div
-        style={{
-          fontSize: 36,
-          color: '#AEAEB2',
-          marginBottom: 16,
-        }}
-      >
+      <div style={{ display: 'flex', fontSize: 36, color: '#AEAEB2', marginBottom: 16 }}>
         我的 Apple 稅
       </div>
 
       <div
         style={{
+          display: 'flex',
           fontSize: 96,
           fontWeight: 700,
           color: '#FF9F0A',
           marginBottom: 40,
         }}
       >
-        NT${total.toLocaleString()}
+        {`NT$${total.toLocaleString()}`}
       </div>
 
       <div
         style={{
+          display: 'flex',
           backgroundColor: '#FF9F0A',
           color: '#000000',
           fontSize: 36,
@@ -57,11 +51,12 @@ export function OgCard({ total, grade }: Props) {
           marginBottom: 24,
         }}
       >
-        ★ {grade.label} ★
+        {`★ ${grade.label} ★`}
       </div>
 
       <div
         style={{
+          display: 'flex',
           position: 'absolute',
           bottom: 48,
           right: 64,
