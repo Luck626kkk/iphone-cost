@@ -10,7 +10,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "deploy": "wrangler pages deploy"
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20260422.1",
