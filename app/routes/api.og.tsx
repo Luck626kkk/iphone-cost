@@ -1,20 +1,8 @@
-import { ImageResponse } from '@vercel/og'
 import type { LoaderFunctionArgs } from 'react-router'
-import { getGrade } from '~/lib/calculations'
-import { OgCard } from '~/components/OgCard'
 
+// @vercel/og is not compatible with Cloudflare Workers
+// TODO: replace with satori + @resvg/resvg-wasm for dynamic OG images
 export async function loader({ request }: LoaderFunctionArgs) {
   const url = new URL(request.url)
-  const totalParam = url.searchParams.get('total')
-  const total = totalParam ? parseInt(totalParam, 10) : 0
-
-  const grade = getGrade(total)
-
-  return new ImageResponse(
-    OgCard({ total, grade }),
-    {
-      width: 1080,
-      height: 1080,
-    }
-  )
+  return Response.redirect(`${url.origin}/og-default.png`, 302)
 }
