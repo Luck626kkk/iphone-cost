@@ -34,15 +34,20 @@ async function ensureFonts() {
 }
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const url = new URL(request.url)
-  const total = Number(url.searchParams.get('total') ?? '0')
-  const grade = getGrade(total)
+  try {
+    const url = new URL(request.url)
+    const total = Number(url.searchParams.get('total') ?? '0')
+    const grade = getGrade(total)
 
-  const fonts = await ensureFonts()
+    const fonts = await ensureFonts()
 
-  return new ImageResponse(<OgCard total={total} grade={grade} />, {
-    width: 1080,
-    height: 1080,
-    fonts,
-  })
+    return new ImageResponse(<OgCard total={total} grade={grade} />, {
+      width: 1080,
+      height: 1080,
+      fonts,
+    })
+  } catch (e) {
+    const msg = e instanceof Error ? `${e.message}\n${e.stack}` : String(e)
+    return new Response(msg, { status: 500, headers: { 'Content-Type': 'text/plain' } })
+  }
 }
