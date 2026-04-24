@@ -27,7 +27,7 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
     { property: 'og:image:width', content: '1080' },
     { property: 'og:image:height', content: '1080' },
     { property: 'og:image:type', content: 'image/png' },
-    { property: 'og:url', content: `${origin}/result` },
+    { property: 'og:url', content: `${origin}/result${location.search}` },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: ogUrl },
