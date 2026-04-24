@@ -69,6 +69,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
     return new Response(png.buffer as ArrayBuffer, {
       headers: {
         'Content-Type': 'image/png',
+        'Content-Length': String(png.length),
         'Cache-Control': 'public, max-age=3600',
       },
     })
