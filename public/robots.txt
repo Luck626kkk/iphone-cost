@@ -1,3 +1,23 @@
+# Allow social media crawlers to access result pages and OG images
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: Line-Crawler
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Block search engines from indexing dynamic result pages and API
 User-agent: *
 Allow: /
 Disallow: /result
