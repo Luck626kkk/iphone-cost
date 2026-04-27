@@ -13,7 +13,7 @@ export function ShareButtons({ total, grade, shareUrl }: Props) {
   const text = SHARE_TEXT(total, grade, shareUrl)
 
   const downloadImage = async () => {
-    const res = await fetch(`/api/og?total=${total}&grade=${grade.slug}`)
+    const res = await fetch(`${window.location.origin}/iphone-cost/api/og?total=${total}&grade=${grade.slug}`)
     const blob = await res.blob()
     const a = document.createElement('a')
     a.href = URL.createObjectURL(blob)
@@ -34,22 +34,14 @@ export function ShareButtons({ total, grade, shareUrl }: Props) {
         📥 下載分享圖片
       </button>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div>
         <a
-          href={`https://www.threads.net/intent/post?text=${encodeURIComponent(text)}`}
+          href={`https://www.threads.net/intent/post?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`}
           target="_blank"
           rel="noreferrer"
           className="flex items-center justify-center gap-2 border border-gray-300 rounded-xl py-3 text-sm font-medium hover:bg-gray-50 transition-colors"
         >
           分享 Threads
-        </a>
-        <a
-          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`}
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center justify-center gap-2 border border-gray-300 rounded-xl py-3 text-sm font-medium hover:bg-gray-50 transition-colors"
-        >
-          分享 X / Twitter
         </a>
       </div>
 
