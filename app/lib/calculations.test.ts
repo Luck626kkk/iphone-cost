@@ -75,31 +75,42 @@ describe('getGrade', () => {
   })
 })
 
+const sel = (price_twd: number, year: number): Selection => ({
+  productId: 'test', model: 'test', variant: '', price_twd, year,
+  category: 'iphone', quantity: 1,
+})
+
 describe('calcAAPL', () => {
-  it('2014 年基準，現值大於投入（股票有漲）', () => {
-    const result = calcAAPL(480730, 2014)
+  it('2014 年購買，現值大於投入（股票有漲）', () => {
+    const result = calcAAPL([sel(480730, 2014)])
     expect(result.currentValue).toBeGreaterThan(480730)
   })
 
-  it('2023 年基準的倍率小於 2014 年基準', () => {
-    const r2014 = calcAAPL(480730, 2014)
-    const r2023 = calcAAPL(480730, 2023)
+  it('2023 年購買的倍率小於 2014 年購買', () => {
+    const r2014 = calcAAPL([sel(480730, 2014)])
+    const r2023 = calcAAPL([sel(480730, 2023)])
     expect(r2023.currentValue).toBeLessThan(r2014.currentValue)
   })
 
   it('年份 < 2007 → 回傳原始金額', () => {
-    const result = calcAAPL(100000, 2000)
+    const result = calcAAPL([sel(100000, 2000)])
     expect(result.currentValue).toBe(100000)
   })
 
   it('未來年份 → 回傳原始金額', () => {
-    const result = calcAAPL(100000, 2099)
+    const result = calcAAPL([sel(100000, 2099)])
     expect(result.currentValue).toBe(100000)
   })
 
   it('gain 等於 currentValue 減去 invested', () => {
-    const result = calcAAPL(480730, 2014)
+    const result = calcAAPL([sel(480730, 2014)])
     expect(result.gain).toBe(result.currentValue - result.invested)
+  })
+
+  it('多個產品各自用購買年份計算', () => {
+    const mixed = calcAAPL([sel(240365, 2014), sel(240365, 2023)])
+    const single2014 = calcAAPL([sel(480730, 2014)])
+    expect(mixed.currentValue).toBeLessThan(single2014.currentValue)
   })
 })
 

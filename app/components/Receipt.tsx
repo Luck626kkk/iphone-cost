@@ -26,12 +26,8 @@ export function Receipt({ selections, total }: Props) {
     requestAnimationFrame(tick)
   }, [total])
 
-  const baseYear = selections.length > 0
-    ? Math.min(...selections.map(s => s.year))
-    : new Date().getFullYear()
-
   const grade = getGrade(total)
-  const aapl = calcAAPL(total, baseYear)
+  const aapl = calcAAPL(selections)
   const comparisons = getComparisons(total)
 
   const byCategory: Record<string, { label: string; items: Selection[] }> = {

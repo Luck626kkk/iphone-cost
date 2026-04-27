@@ -15,21 +15,32 @@ export function getGrade(total: number): Grade {
   return { label: '建議你去 Apple 上班', comment: '直接折抵員工價', slug: 'work-there' }
 }
 
-export function calcAAPL(totalTWD: number, baseYear: number): AAPLResult {
+export function calcAAPL(selections: Selection[]): AAPLResult {
   const history = aaplData.AAPL_historical
-  const baseEntry = history.find(h => h.year === baseYear)
   const latestEntry = history[history.length - 1]
 
-  if (!baseEntry || baseYear < 2007 || baseYear > latestEntry.year) {
-    return { invested: totalTWD, currentValue: totalTWD, gain: 0, baseYear }
+  let totalInvested = 0
+  let totalCurrentValue = 0
+
+  for (const s of selections) {
+    const cost = s.price_twd * s.quantity
+    const baseEntry = history.find(h => h.year === s.year)
+    totalInvested += cost
+    if (baseEntry && s.year >= 2007 && s.year <= latestEntry.year) {
+      totalCurrentValue += cost * (latestEntry.close_usd / baseEntry.close_usd)
+    } else {
+      totalCurrentValue += cost
+    }
   }
 
-  const multiplier = latestEntry.close_usd / baseEntry.close_usd
-  const currentValue = Math.round(totalTWD * multiplier)
+  const baseYear = selections.length > 0
+    ? Math.min(...selections.map(s => s.year))
+    : new Date().getFullYear()
+
   return {
-    invested: totalTWD,
-    currentValue,
-    gain: currentValue - totalTWD,
+    invested: totalInvested,
+    currentValue: Math.round(totalCurrentValue),
+    gain: Math.round(totalCurrentValue) - totalInvested,
     baseYear,
   }
 }
