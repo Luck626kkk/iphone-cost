@@ -7,11 +7,11 @@ export const meta: MetaFunction = () => [
   { name: 'description', content: '計算你歷年買 iPhone、Mac、iPad、訂閱服務的總花費，以及如果當初買 AAPL 股票能賺多少。' },
   { property: 'og:title', content: '花蘋果 — 你花了多少在蘋果上？' },
   { property: 'og:description', content: '計算你的蘋果人生花費，結果以 Apple Store 收據樣式呈現。' },
-  { property: 'og:image', content: 'https://iphone-cost.pages.dev/og-default.png' },
-  { property: 'og:url', content: 'https://iphone-cost.pages.dev/' },
+  { property: 'og:image', content: 'https://luckeverything.com/iphone-cost/og-default.png' },
+  { property: 'og:url', content: 'https://luckeverything.com/iphone-cost/' },
   { name: 'twitter:title', content: '花蘋果 — 你花了多少在蘋果上？' },
   { name: 'twitter:description', content: '計算你歷年貢獻 Apple 多少錢' },
-  { name: 'twitter:image', content: 'https://iphone-cost.pages.dev/og-default.png' },
+  { name: 'twitter:image', content: 'https://luckeverything.com/iphone-cost/og-default.png' },
 ]
 
 export default function Home() {
