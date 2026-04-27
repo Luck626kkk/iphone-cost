@@ -19,7 +19,6 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
   const ogUrl = `${origin}/iphone-cost/api/og?total=${total}`
 
   return [
-    { name: 'robots', content: 'noindex, nofollow' },
     { title: total > 0 ? `我在蘋果花了 NT$${formatted} — 花蘋果` : '花蘋果 — 你的 Apple 稅' },
     { name: 'description', content: total > 0 ? `歷年 Apple 花費 NT$${formatted}。你的結果是什麼？` : '計算你歷年貢獻 Apple 多少錢' },
     { property: 'og:title', content: `我在蘋果花了 NT$${formatted}` },

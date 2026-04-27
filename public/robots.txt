@@ -17,7 +17,11 @@ Allow: /
 User-agent: Slackbot
 Allow: /
 
-# Block search engines from indexing API routes only
+# Block search engines from result pages and API routes
+User-agent: Googlebot
+Disallow: /iphone-cost/result
+Disallow: /iphone-cost/api/
+
 User-agent: *
 Allow: /
 Disallow: /iphone-cost/api/
