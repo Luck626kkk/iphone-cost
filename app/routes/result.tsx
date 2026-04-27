@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useSearchParams, Link } from 'react-router'
+import { useSearchParams, Link, useLoaderData } from 'react-router'
 import type { LoaderFunctionArgs, MetaFunction } from 'react-router'
 import { Receipt } from '~/components/Receipt'
 import { ShareButtons } from '~/components/ShareButtons'
@@ -35,6 +35,7 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
 }
 
 export default function Result() {
+  const { origin } = useLoaderData<typeof loader>()
   const [selections, setSelections] = useState<Selection[]>([])
   const [searchParams] = useSearchParams()
 
@@ -49,9 +50,7 @@ export default function Result() {
   const total = sharedTotal ? Number(sharedTotal) : calcTotal(selections)
   const grade = getGrade(total)
 
-  const shareUrl = typeof window !== 'undefined'
-    ? `${window.location.origin}/iphone-cost/result?total=${total}&grade=${grade.slug}`
-    : ''
+  const shareUrl = `${origin}/iphone-cost/result?total=${total}&grade=${grade.slug}`
 
   if (total === 0 && !sharedTotal) {
     return (
