@@ -18,7 +18,6 @@ function wasmExternalPlugin(): Plugin {
 }
 
 export default defineConfig({
-  base: "/iphone-cost/",
   plugins: [
     cloudflareDevProxy(),
     tailwindcss(),
