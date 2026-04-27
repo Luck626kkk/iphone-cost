@@ -17,10 +17,9 @@ Allow: /
 User-agent: Slackbot
 Allow: /
 
-# Block search engines from indexing dynamic result pages and API
+# Block search engines from indexing API routes only
 User-agent: *
 Allow: /
-Disallow: /iphone-cost/result
 Disallow: /iphone-cost/api/
 
 Sitemap: https://luckeverything.com/iphone-cost/sitemap.xml
