@@ -20,7 +20,7 @@ Allow: /
 # Block search engines from indexing dynamic result pages and API
 User-agent: *
 Allow: /
-Disallow: /result
-Disallow: /api/
+Disallow: /iphone-cost/result
+Disallow: /iphone-cost/api/
 
-Sitemap: https://iphone-cost.pages.dev/sitemap.xml
+Sitemap: https://luckeverything.com/iphone-cost/sitemap.xml
