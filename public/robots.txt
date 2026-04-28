@@ -20,7 +20,5 @@ User-agent: Googlebot
 Disallow: /result
 Disallow: /api/
 
-User-agent: *
-Disallow:
 
 Sitemap: https://iphone-cost.luckeverything.com/sitemap.xml
