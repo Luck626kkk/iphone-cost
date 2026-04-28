@@ -7,7 +7,7 @@ import { getGrade } from '~/lib/calculations'
 import { OgCard } from '~/components/OgCard'
 
 const FONT_CHARS =
-  '我的稅蘋果路人愛好者深度使信徒最建議你去上班花 ★NT$ACTim Cookl0123456789,.iphone-cost.pages.devworksaaa26905677'
+  '我的稅蘋果路人愛好者深度使信徒最建議你去上班花 ★NT$ACTim Cookl0123456789,.iphone-cost.luckeverything.com'
 
 let wasmReady: Promise<void> | null = null
 let fontCache: { name: string; data: ArrayBuffer; weight: 400 | 700; style: 'normal' }[] | null =

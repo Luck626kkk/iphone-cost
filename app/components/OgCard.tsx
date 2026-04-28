@@ -64,7 +64,7 @@ export function OgCard({ total, grade }: Props) {
           color: '#636366',
         }}
       >
-        iphone-cost.pages.dev
+        iphone-cost.luckeverything.com
       </div>
     </div>
   )
