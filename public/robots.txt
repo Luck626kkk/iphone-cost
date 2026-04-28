@@ -1,4 +1,3 @@
-# Allow social media crawlers to access result pages and OG images
 User-agent: facebookexternalhit
 Allow: /
 
@@ -17,12 +16,11 @@ Allow: /
 User-agent: Slackbot
 Allow: /
 
-# Block search engines from result pages and API routes
 User-agent: Googlebot
 Disallow: /result
 Disallow: /api/
 
 User-agent: *
-Allow: /
+Disallow:
 
 Sitemap: https://iphone-cost.luckeverything.com/sitemap.xml
