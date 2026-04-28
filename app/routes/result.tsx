@@ -16,21 +16,22 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
   const total = parseInt(params.get('total') ?? '0', 10)
   const formatted = total > 0 ? total.toLocaleString() : '?'
   const origin = data?.origin ?? ''
-  const ogUrl = `${origin}/api/og?total=${total}`
+  const gradeSlug = params.get('grade') ?? 'passerby'
+  const ogImage = `${origin}/og-grade-${gradeSlug}.png`
 
   return [
     { title: total > 0 ? `我在蘋果花了 NT$${formatted} — 花蘋果` : '花蘋果 — 你的 Apple 稅' },
     { name: 'description', content: total > 0 ? `歷年 Apple 花費 NT$${formatted}。你的結果是什麼？` : '計算你歷年貢獻 Apple 多少錢' },
     { property: 'og:title', content: `我在蘋果花了 NT$${formatted}` },
     { property: 'og:description', content: total > 0 ? `歷年 Apple 花費 NT$${formatted}。你的結果是什麼？` : '計算你歷年貢獻 Apple 多少錢' },
-    { property: 'og:image', content: ogUrl },
+    { property: 'og:image', content: ogImage },
     { property: 'og:image:width', content: '1080' },
     { property: 'og:image:height', content: '1080' },
     { property: 'og:image:type', content: 'image/png' },
     { property: 'og:url', content: `${origin}/result${location.search}` },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:image', content: ogUrl },
+    { name: 'twitter:image', content: ogImage },
   ]
 }
 
