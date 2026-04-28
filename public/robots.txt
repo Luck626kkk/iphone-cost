@@ -1,3 +1,25 @@
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: Line-Crawler
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Googlebot
+Disallow: /result
+Disallow: /api/
+
 User-agent: *
 Allow: /
 
