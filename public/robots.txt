@@ -1,3 +1,7 @@
+User-agent: Googlebot
+Disallow: /result
+Disallow: /api/
+
 User-agent: facebookexternalhit
 Allow: /
 
@@ -16,9 +20,7 @@ Allow: /
 User-agent: Slackbot
 Allow: /
 
-User-agent: Googlebot
-Disallow: /result
-Disallow: /api/
-
+User-agent: *
+Allow: /
 
 Sitemap: https://iphone-cost.luckeverything.com/sitemap.xml
