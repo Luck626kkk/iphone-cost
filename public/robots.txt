@@ -24,6 +24,5 @@ Disallow: /iphone-cost/api/
 
 User-agent: *
 Allow: /
-Disallow: /iphone-cost/api/
 
 Sitemap: https://luckeverything.com/iphone-cost/sitemap.xml
