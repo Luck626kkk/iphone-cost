@@ -29,7 +29,7 @@ const grades = [
   { label: '建議你去 Apple 上班', comment: '直接折抵員工價', slug: 'work-there' },
 ]
 
-const FONT_CHARS = '花蘋果路人愛好者深度使信徒最建議你去上班 ★Tim Cook有救正常用戶很認真你是死忠想必收到過感謝信直接折抵員工價iphone-cost.luckeverything.com'
+const FONT_CHARS = '花蘋果路人愛好者深度使用信徒最的建議你去上班還 ★Tim Cook有救正常戶很認真是死忠想必收到過感謝直接折抵員工價iphone-cost.luckeverything.com'
 
 async function fetchFont(weight) {
   const text = encodeURIComponent(FONT_CHARS)
