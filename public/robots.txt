@@ -19,10 +19,10 @@ Allow: /
 
 # Block search engines from result pages and API routes
 User-agent: Googlebot
-Disallow: /iphone-cost/result
-Disallow: /iphone-cost/api/
+Disallow: /result
+Disallow: /api/
 
 User-agent: *
 Allow: /
 
-Sitemap: https://luckeverything.com/iphone-cost/sitemap.xml
+Sitemap: https://iphone-cost.luckeverything.com/sitemap.xml

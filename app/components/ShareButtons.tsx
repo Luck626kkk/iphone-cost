@@ -13,7 +13,7 @@ export function ShareButtons({ total, grade, shareUrl }: Props) {
   const text = SHARE_TEXT(total, grade, shareUrl)
 
   const downloadImage = async () => {
-    const res = await fetch(`${window.location.origin}/iphone-cost/api/og?total=${total}&grade=${grade.slug}`)
+    const res = await fetch(`${window.location.origin}/api/og?total=${total}&grade=${grade.slug}`)
     const blob = await res.blob()
     const a = document.createElement('a')
     a.href = URL.createObjectURL(blob)

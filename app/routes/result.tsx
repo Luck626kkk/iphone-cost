@@ -16,7 +16,7 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
   const total = parseInt(params.get('total') ?? '0', 10)
   const formatted = total > 0 ? total.toLocaleString() : '?'
   const origin = data?.origin ?? ''
-  const ogUrl = `${origin}/iphone-cost/api/og?total=${total}`
+  const ogUrl = `${origin}/api/og?total=${total}`
 
   return [
     { title: total > 0 ? `我在蘋果花了 NT$${formatted} — 花蘋果` : '花蘋果 — 你的 Apple 稅' },
@@ -27,7 +27,7 @@ export const meta: MetaFunction<typeof loader> = ({ location, data }) => {
     { property: 'og:image:width', content: '1080' },
     { property: 'og:image:height', content: '1080' },
     { property: 'og:image:type', content: 'image/png' },
-    { property: 'og:url', content: `${origin}/iphone-cost/result${location.search}` },
+    { property: 'og:url', content: `${origin}/result${location.search}` },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: ogUrl },
@@ -50,7 +50,7 @@ export default function Result() {
   const total = sharedTotal ? Number(sharedTotal) : calcTotal(selections)
   const grade = getGrade(total)
 
-  const shareUrl = `${origin}/iphone-cost/result?total=${total}&grade=${grade.slug}`
+  const shareUrl = `${origin}/result?total=${total}&grade=${grade.slug}`
 
   if (total === 0 && !sharedTotal) {
     return (
